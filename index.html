@@ -3,48 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Unique Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>John Doe</h1>
+            <p>Front-end Developer &amp; Designer</p>
+        </div>
     </header>
 
-    <section id="about">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about-section">
         <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
+        <p>Welcome to my portfolio! I'm passionate about creating beautiful and user-friendly web experiences.</p>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" class="portfolio-section">
         <h2>Portfolio</h2>
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+        <div class="filter">
+            <button class="filter-button" data-filter="all">All</button>
+            <button class="filter-button" data-filter="web">Web</button>
+            <button class="filter-button" data-filter="design">Design</button>
+            <button class="filter-button" data-filter="app">App</button>
         </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
+        <div class="projects">
+            <div class="project web">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Web Development</p>
+            </div>
+            <div class="project design">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Graphic Design</p>
+            </div>
+            <div class="project app">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Mobile App</p>
+            </div>
+            <!-- Add more projects with appropriate data-filter attributes -->
         </div>
-        <!-- Add more project items as needed -->
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+        <p>Feel free to reach out to me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2023 My Portfolio</p>
+    <footer class="footer">
+        <p>&copy; 2023 John Doe</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
