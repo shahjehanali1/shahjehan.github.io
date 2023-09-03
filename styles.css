@@ -59,10 +59,10 @@ header, .navbar {
     font-size: 24px;
 }
 .intro{
-    text-algin: center;
+    text-align: center;
     padding: 120px 0;
 }
-.intro *{color: #fff;}
+.intro *{color: #fff;text-align: center;}
 
 /* Navbar styles */
 .navbar ul {
