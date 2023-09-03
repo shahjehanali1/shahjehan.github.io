@@ -28,6 +28,11 @@ body {
     margin-top: 20px;
 }
 
+.btn:hover{
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
 /* Common styles for header and navbar */
 header, .navbar {
     background-color: #333;
