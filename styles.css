@@ -11,6 +11,13 @@ body {
     color: #333;
 }
 
+/* Common styles for header and navbar */
+header, .navbar {
+    background-color: #333;
+    text-align: center;
+}
+
+/* Header styles */
 .hero {
     background-image: url('hero-bg.jpg');
     background-size: cover;
@@ -34,11 +41,7 @@ body {
     font-size: 24px;
 }
 
-.navbar {
-    background-color: #333;
-    text-align: center;
-}
-
+/* Navbar styles */
 .navbar ul {
     list-style: none;
 }
@@ -59,6 +62,7 @@ body {
     color: #ff5733;
 }
 
+/* Section styles */
 .about-section,
 .portfolio-section,
 .contact-section {
@@ -73,12 +77,15 @@ body {
     margin-bottom: 40px;
 }
 
+/* Project card styles */
 .project {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
+    margin: 10px;
+    flex: 1;
 }
 
 .project img {
@@ -101,11 +108,13 @@ body {
     transform: translateY(-5px);
 }
 
+/* Contact section styles */
 .contact-section p {
     text-align: center;
     font-size: 20px;
 }
 
+/* Footer styles */
 .footer {
     text-align: center;
     background-color: #333;
@@ -113,6 +122,7 @@ body {
     padding: 10px 0;
 }
 
+/* Filtering styles */
 .filter {
     text-align: center;
     margin-bottom: 40px;
@@ -146,3 +156,45 @@ body {
     color: #ff5733;
 }
 
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjust the font size for smaller screens */
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .project h3 {
+        font-size: 20px;
+    }
+
+    .project p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Adjust padding and margin for smaller screens */
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-content {
+        padding: 10px;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .project {
+        margin: 5px;
+    }
+}
