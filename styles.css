@@ -28,7 +28,7 @@ header, .navbar {
     background-image: url('hero-bg.jpg');
     background-size: cover;
     text-align: center;
-    padding: 120px 0;
+    padding: 0 0 50%;
     color: #fff;
 }
 
@@ -45,6 +45,10 @@ header, .navbar {
 
 .hero p {
     font-size: 24px;
+}
+.intro{
+    text-algin: center;
+    padding: 120px 0;
 }
 
 /* Navbar styles */
